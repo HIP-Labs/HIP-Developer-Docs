@@ -12,13 +12,13 @@ Once you have made an account with the provided link (big button above) or logge
 
 1. Select the datacenter closest to your location to minimize latency and improve performance.
 
-![Choose Region](../Images/Choose_Region.png)
+![Choose Region](../../Images/Choose_Region.png)
 
 ### Step 2: Choose an Image
 
 1. Select **Ubuntu Server 24.04 (LTS)** as your operating system.
 
-![Choose an Image](../Images/Choose_an_Image.png)
+![Choose an Image](../../Images/Choose_an_Image.png)
 
 ### Step 3: Choose Droplet Size and CPU Options
 
@@ -27,7 +27,7 @@ Once you have made an account with the provided link (big button above) or logge
    - **8GB RAM**
    - **100GB SSD**
 
-![Choose Size and CPU](../Images/Choose_Size_and_CPU.png)
+![Choose Size and CPU](../../Images/Choose_Size_and_CPU.png)
 
 ### Step 4: Choose Authentication and Advanced Options
 
@@ -36,8 +36,8 @@ Once you have made an account with the provided link (big button above) or logge
 2. Enable **IPv6** to future-proof your setup.
 3. Optionally, add any initialization scripts if required.
 
-![Choose Auth Method](../Images/Choose_Auth_Model.png)
-![Advanced Options](../Images/Choose_Advanced_Under_Auth.png)
+![Choose Auth Method](../../Images/Choose_Auth_Model.png)
+![Advanced Options](../../Images/Choose_Advanced_Under_Auth.png)
 
 ### Step 5: Finalize and Create Droplet
 
@@ -45,19 +45,19 @@ Once you have made an account with the provided link (big button above) or logge
 2. Assign relevant tags for better organization.
 3. Click **Create Droplet** to initiate the setup process.
 
-![Finalize](../Images/Finalize.png)
+![Finalize](../../Images/Finalize.png)
 
 ### Step 6: Wait for the Droplet to Launch
 
 1. The creation process will take a few moments. Be patient while the droplet is being set up.
 
-![Wait to Launch](../Images/Wait_to_Launch.png)
+![Wait to Launch](../../Images/Wait_to_Launch.png)
 
 ### Step 7: Droplet Creation Complete
 
 1. Once the droplet is ready, you will see the status change to active.
 
-![Droplet Complete](../Images/Droplet_Complete.png)
+![Droplet Complete](../../Images/Droplet_Complete.png)
 
 ## Setting Up the Firewall
 
@@ -69,13 +69,13 @@ Once you have made an account with the provided link (big button above) or logge
 4. Allow **All TCP** ports for application communication.
 5. Allow **All UDP** ports for any additional services.
 
-![Create a Firewall](../Images/Create_a_Firewall.png)
+![Create a Firewall](../../Images/Create_a_Firewall.png)
 
 ### Step 9: Configure Outbound Rules
 
 1. Allow **All traffic** for ICMP, TCP, and UDP to ensure proper communication with the subnet.
 
-![Outbound Rules](../Images/Outbounds_Rules_Firewall.png)
+![Outbound Rules](../../Images/Outbounds_Rules_Firewall.png)
 
 ## Droplet Initialization
 
@@ -87,7 +87,7 @@ Once the firewall is set up, you are now ready to initialize your droplet for mi
 
 2. (EXPERIENCED) Use your SSH key to securely log in to your droplet from your own bash terminal.
 
-![Terminal Window](../Images/Terminal_Window_NO_IP.png)
+![Terminal Window](../../Images/Terminal_Window_NO_IP.png)
 
 ---
 
