@@ -232,6 +232,6 @@ To check on the miner or interact with it again:
 
 2. You should now have access to the webapp and be recieving tasks ffrom validators to complete.
 
-   ![Frontend](../Images/Frontend.png)
+   ![Frontend](../../Images/Frontend.png)
 
 By following these steps, you should be able to set up and run a miner on the HIP Subnet from anywhere with your server ip you created. Enjoy mining!
