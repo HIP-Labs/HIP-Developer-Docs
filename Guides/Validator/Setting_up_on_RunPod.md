@@ -10,6 +10,8 @@ Firstly, ensure your choice of hardware meets the minimum requirements:
 
 If you have deployed a validator pod using the provided template link ([Runpod Template](https://runpod.io/console/deploy?template=3h5nq2r5oi&ref=l9hlag5r)), everything should already be set up for you. To start the validator, follow these steps:
 
+<em>PLEASE ENSURE YOU RESTORE YOUR COLDKEY VIA THE PUBLIC KEY. DO NOT PROVIDE YOUR MNEMONIC TO ANY SERVICE OUTSIDE YOUR CONTROL</em>
+
 ## Steps to Start the Validator
 
 1. **Open the Runpod web interface and select the "Connect" button for your pod.**
@@ -23,7 +25,7 @@ If you have deployed a validator pod using the provided template link ([Runpod T
 
 4. **Restore your keys that you want to use for validation:**
     ```bash
-    btcli w regen_coldkey --wallet.name COLD_KEY --mnemonic YOUR_MNEMONIC
+    btcli w regen_coldkeypub --wallet.name COLD_KEY_ss58
     btcli w regen_hotkey --wallet.name COLD_KEY --wallet.hotkey HOT_KEY --mnemonic YOUR_MNEMONIC
     ```
 
@@ -34,7 +36,7 @@ If you have deployed a validator pod using the provided template link ([Runpod T
 
 6. **Start the validator script using pm2, replacing `RUNPODPORT`, `COLD_KEY`, and `HOT_KEY` with your copied port number and key args:**
     ```bash
-    pm2 start "python neurons/validator.py --axon.port RUNPODPORT --wallet.name COLD_KEY --wallet.hotkey HOT_KEY --netuid 36 --logging.debug --logging.trace" --name validator
+    pm2 start --interpreter python3 --name validator -- neurons/validator.py --axon.port RUNPODPORT --wallet.name COLD_KEY --wallet.hotkey HOT_KEY --netuid 36 --logging.debug --logging.trace
     ```
 
 7. **Save the pm2 process list to ensure the validator starts automatically on pod restarts:**
